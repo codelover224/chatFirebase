@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title></title>
+
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyBxO0aZYtNwIsxuPg5ZciyEFaeVXzcuAo4",
+      authDomain: "encchatting.firebaseapp.com",
+      databaseURL: "https://encchatting.firebaseio.com",
+      projectId: "encchatting",
+      storageBucket: "encchatting.appspot.com"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h1 class="center">Single Page Chatting Applications</h1>
+    <div>
+      <div class="border left">
+        <div class="top">
+          <div class="right_btn">
+            <button type="button" onclick="clear_chat1()">Clear</button>
+          </div>
+          <div class="center">
+            <p>User1</p>
+          </div>
+        </div>
+
+        <div id="id_1" class="msg_area">
+        </div>
+
+        <div class="bottom">
+          <div class="ele">
+            <input id="msg1" type="text" placeholder="Type your message and press Enter to send"
+              onkeypress="return enter_pressed1(event)" />
+            <input id="btn_send1" type="submit" value="SEND" />
+          </div>
+        </div>
+      </div>
+
+      <div class="border right">
+        <div class="top">
+          <div class="right_btn">
+            <button type="button" onclick="clear_chat2()">Clear</button>
+          </div>
+          <div class="center">
+            <p>User2</p>
+          </div>
+        </div>
+
+        <div id="id_2" class="msg_area">
+
+        </div>
+
+
+        <div class="bottom">
+          <div class="ele">
+            <input id="msg2" type="text" placeholder="Type your message and press Enter to send"
+              onkeypress="return enter_pressed2(event)" />
+            <input id="btn_send2" type="submit" value="SEND" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='left' style="border:1px solid black;max-height:500px;min-height:200px;overflow:scroll;width:500px;margin-top:20px;margin-left:10px;;" id="database">
+
+    </div>
+
+    <div id="copyright" class="footer center">
+      Copyright @Krushna Sharma,
+    </div>
+  </div>
+
+  <script src="myScript.js"></script>
+
+
+</body>
+
+</html>

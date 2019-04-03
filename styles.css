@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+.msg {
+  color: #000;
+  background-color: LightSkyBlue;
+  min-width: 100px;
+  text-align: left;
+  border-radius: 8px;
+  display: block;
+  margin-right: 10px;
+  float: right;
+  clear: both;
+  max-width: 400px;
+  overflow-wrap: break-word;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: lightskyblue
+}
+
+.border {
+  width: 30%;
+  border: 2px solid black;
+  max-height: 600px;
+  margin-top: 20px;
+}
+
+.left {
+  float: left;
+}
+.left2{
+  float: left;
+  margin-left: 10px;
+}
+
+.right {
+  float: right;
+}
+.right2 {
+  float: right;
+  margin-right: 10px;
+}
+
+.top {
+  background-color: LightGrey;
+  padding: 10px 0px;
+}
+.center{
+  text-align: center;
+  padding: 1px;
+  width: 90%;
+}
+
+.right_btn{
+  float: right;
+  margin-right: 10px;
+}
+
+input[type=text] {
+  width: 83%;
+  padding: 8px;
+  margin: 2px 0;
+}
+
+input[type=submit] {
+  width:15%;
+  padding: 8px;
+  box-shadow: 1px 0px 5px;
+  background-color: orange;
+  border-radius: 4px;
+}
+
+button{
+  padding: 12px;
+  background-color: red;
+  box-shadow: 0px 0px 8px black;
+  color: floralwhite;
+}
+
+.msg_area{
+  max-height: 450px;
+  overflow: auto;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.bottom {
+  background-color: LightGrey;
+  padding: 1px;
+}
+
+.other_user{
+  color: #000;
+  background-color: antiquewhite;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 10px;
+  clear: both;
+  float: left;
+  max-width: 400px;
+  overflow-wrap: break-word;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+.clearfix{
+  clear: both;
+}
+.ele{
+  margin-left: 10px;
+}
+
+h1.center{
+  text-align: center;
+  padding: 25px;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.footer{
+  width: 99.2%;
+  position: fixed;
+  bottom: 0px;
+  background-color: lightskyblue;
+}
+p.time{
+ font-size: 10px; 
+ margin-top: 0px;
+}
+
+@keyframes example {
+  from {left: 500px;}
+  to {left:0px;}
+}
+
+@keyframes example2 {
+  0% {right: 500px;}
+  50% {right: 250px;}
+  100% {right:0px;}
+}
+
+.round{
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.round2{
+  border-radius: 25px;
+  background: #2AC7EF;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
